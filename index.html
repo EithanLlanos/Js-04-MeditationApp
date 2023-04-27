@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meditation App</title>
+    <!-- <script src="https://kit.fontawesome.com/e3355a4927.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="b box1 c_button1"></div>
-        <div class="b box2 c_button2"></div>
-        <div class="b box3 c_button3"></div>
-        <div class="b box4 c_mainbutton"></div>
-        <div class="b box5 c_button4"></div>
-        <div class="b box6 c_button5"></div>
+    <div class="body">
+        <video class="background" id="background" src="video/rain.mp4" loop muted></video>
+        <div class="container">
+            <div class="b c_button1">
+                <div class="c1_b c1_b1 ">2 Minutes</div>
+                <div class="c1_b c1_b2">5 Minutes</div>
+                <div class="c1_b c1_b3">10 Minutes</div>
+            </div>
+            <div class="b c_mainbutton"><div class="c_mainicon" ><img class="mainicon"  onclick="control(false)" id="ctrl" src="pics/play.png" alt=""><img class="mainbutton2" src="pics/reset.png" onclick="reset()" alt=""></div></div>
+            <div class="b c_button2">
+                <img class="c_b2_i1" src="pics/rain.png" alt="" onclick="change(1)"></i>
+                <img class="c_b2_i2"src="pics/beach.png" alt="" onclick="change(2)"></i>
+            </div>
+
+        </div>
     </div>
 </body>
 </html>
